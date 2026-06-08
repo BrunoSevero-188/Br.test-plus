@@ -1,44 +1,28 @@
-.reviewsSection {
+.section {
   padding-top: 5rem;
-  /* py-20 (80px) */
   padding-bottom: 5rem;
   padding-left: 1rem;
-  /* px-4 (16px) */
   padding-right: 1rem;
   background-color: rgba(24, 24, 27, 0.1);
-  /* bg-zinc-900/10 */
   border-top: 1px solid #18181b;
-  /* border-t border-zinc-900 */
 }
 
-/* O container adicionado para dar o limite de largura e centralizar na tela */
-.container {
+.content {
   max-width: 80rem;
-  /* max-w-7xl (1120px) */
   margin-left: auto;
-  /* mx-auto */
   margin-right: auto;
 }
 
-.header {
+.heading {
   text-align: center;
-  /* text-center */
   margin-bottom: 3rem;
-  /* mb-12 (48px) */
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #a1a1aa;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
-.title {
-  font-size: 1.25rem;
-  /* text-xl */
-  font-weight: 700;
-  /* font-bold */
-  color: #a1a1aa;
-  /* text-zinc-400 */
-  text-transform: uppercase;
-  /* uppercase */
-  letter-spacing: 0.1em;
-  /* tracking-widest */
-}
 
 .grid {
   display: grid;
@@ -96,13 +80,71 @@
 
 /* Media Query para telas maiores (Responsividade do título e colunas) */
 @media (min-width: 768px) {
-  .title {
+  .heading {
     font-size: 1.5rem;
-    /* md:text-2xl */
   }
 
   .grid {
     grid-template-cols: repeat(3, minmax(0, 1fr));
-    /* md:grid-cols-3 */
   }
+}
+
+.formWrapper {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: rgba(24, 24, 27, 0.3);
+  border: 1px solid rgba(39, 39, 42, 0.8);
+  border-radius: 0.75rem;
+}
+
+.formTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 0.9rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(39, 39, 42, 0.8);
+  background: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  outline: none;
+}
+
+.textarea:focus {
+  border-color: rgba(212, 255, 0, 0.8);
+  box-shadow: 0 0 0 3px rgba(212, 255, 0, 0.15);
+}
+
+.sendButton {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #d4ff00;
+  color: #111;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.05s ease-in-out, opacity 0.15s ease-in-out;
+}
+
+.sendButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sendButton:active {
+  transform: translateY(1px);
+}
+
+.formHint {
+  margin-top: 0.75rem;
+  color: #d4d4d8;
+  font-size: 0.875rem;
+  line-height: 1.4;
 }

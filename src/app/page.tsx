@@ -42,7 +42,7 @@ export default function Home() {
           description="A BR Test+ é referência em soluções inteligentes para o seu smartphone. Atuamos com a venda de acessórios premium homologados, suporte especializado e rotinas técnicas minuciosas para garantir o melhor desempenho e segurança dos seus dados. Nosso compromisso é entregar confiança, transparência e agilidade em cada atendimento."
         />
 
-        <Reviews title="Depoimentos de Quem Confia na BR Test+" />
+        <Reviews />
 
         <CTA
           title="Gostou de algum produto ou quer tirar uma dúvida?"
