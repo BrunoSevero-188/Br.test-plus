@@ -30,21 +30,21 @@ export const SERVICES: Service[] = [
 export const PRODUCTS: Product[] = [
   {
     id: "p1",
-    src: "@/public/Carregador-Mi-20W-Type-C.jpg",
+    src: "/Carregador-Mi-20W-Type-C.jpg",
     name: "Carregador Mi 20W (Type-C)",
     description: "Carregamento rápido original Xiaomi, eficiente e totalmente seguro para o seu smartphone.",
     tag: "Original"
   },
   {
     id: "p2",
-    src: "@/public/Capinha-Premium-Space.jpg",
+    src: "/Capinha-Premium-Space.jpg",
     name: "Capinha Premium Space",
     description: "Material PC+TPU de alta resistência. Drop-Tested com transparência duradoura de 2.5mm.",
     tag: "Drop-Tested"
   },
   {
     id: "p3",
-    src: "@/public/Fone-Bluetooth-TWS-Kaidi-KD-790.jpg",
+    src: "/Fone-Bluetooth-TWS-Kaidi-KD-790.jpg",
     name: "Fone Bluetooth TWS Kaidi KD-790",
     description: "Áudio de alta fidelidade, excelente autonomia de bateria e homologado pela ANATEL.",
     tag: "Homologado"
