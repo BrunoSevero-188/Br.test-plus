@@ -1,0 +1,108 @@
+.reviewsSection {
+  padding-top: 5rem;
+  /* py-20 (80px) */
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  /* px-4 (16px) */
+  padding-right: 1rem;
+  background-color: rgba(24, 24, 27, 0.1);
+  /* bg-zinc-900/10 */
+  border-top: 1px solid #18181b;
+  /* border-t border-zinc-900 */
+}
+
+/* O container adicionado para dar o limite de largura e centralizar na tela */
+.container {
+  max-width: 80rem;
+  /* max-w-7xl (1120px) */
+  margin-left: auto;
+  /* mx-auto */
+  margin-right: auto;
+}
+
+.header {
+  text-align: center;
+  /* text-center */
+  margin-bottom: 3rem;
+  /* mb-12 (48px) */
+}
+
+.title {
+  font-size: 1.25rem;
+  /* text-xl */
+  font-weight: 700;
+  /* font-bold */
+  color: #a1a1aa;
+  /* text-zinc-400 */
+  text-transform: uppercase;
+  /* uppercase */
+  letter-spacing: 0.1em;
+  /* tracking-widest */
+}
+
+.grid {
+  display: grid;
+  grid-template-cols: repeat(1, minmax(0, 1fr));
+  /* grid-cols-1 */
+  gap: 1.5rem;
+  /* gap-6 (24px) */
+}
+
+.card {
+  padding: 1.5rem;
+  /* p-6 (24px) */
+  background-color: rgba(24, 24, 27, 0.3);
+  /* bg-zinc-900/30 */
+  border: 1px solid rgba(39, 39, 42, 0.8);
+  /* border border-zinc-800/80 */
+  border-radius: 0.75rem;
+  /* rounded-xl (12px) */
+}
+
+.stars {
+  display: flex;
+  /* flex */
+  gap: 0.25rem;
+  /* gap-1 (4px) */
+  color: #d4ff00;
+  /* text-[#d4ff00] */
+  font-size: 0.875rem;
+  /* text-sm */
+  margin-bottom: 0.75rem;
+  /* mb-3 (12px) */
+}
+
+.comment {
+  color: #d4d4d8;
+  /* text-zinc-300 */
+  font-size: 0.875rem;
+  /* text-sm */
+  font-style: italic;
+  /* italic */
+  margin-bottom: 1rem;
+  /* mb-4 (16px) */
+}
+
+.author {
+  font-size: 0.75rem;
+  /* text-xs */
+  font-weight: 700;
+  /* font-bold */
+  color: #ffffff;
+  /* text-white */
+  display: block;
+  /* block */
+}
+
+/* Media Query para telas maiores (Responsividade do título e colunas) */
+@media (min-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+    /* md:text-2xl */
+  }
+
+  .grid {
+    grid-template-cols: repeat(3, minmax(0, 1fr));
+    /* md:grid-cols-3 */
+  }
+}

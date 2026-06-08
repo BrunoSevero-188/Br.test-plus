@@ -1,0 +1,197 @@
+.heroSection {
+  position: relative;
+  padding-top: 5rem;
+  /* pt-20 (80px) */
+  padding-bottom: 6rem;
+  /* pb-24 (96px) */
+  padding-left: 1rem;
+  /* px-4 (16px) */
+  padding-right: 1rem;
+  overflow: hidden;
+  /* overflow-hidden */
+}
+
+/* O efeito do círculo roxo brilhando ao fundo (Glow effect) */
+.glowPurple {
+  position: absolute;
+  top: 25%;
+  /* top-1/4 */
+  left: 50%;
+  /* left-1/2 */
+  transform: translateX(-50%);
+  /* -translate-x-1/2 */
+  width: 500px;
+  /* w-[500px] */
+  height: 500px;
+  /* h-[500px] */
+  filter: blur(120px);
+  background: radial-gradient(circle, rgba(147, 51, 234, 0.15) 0%, transparent 70%);
+  z-index: -10;
+  /* -z-10 */
+}
+
+/* O container adicionado para limitar a largura máxima e centralizar o conteúdo */
+.container {
+  max-width: 56rem;
+  /* max-w-4xl (896px) */
+  margin-left: auto;
+  /* mx-auto */
+  margin-right: auto;
+  text-align: center;
+  /* text-center */
+  position: relative;
+  z-index: 10;
+  /* z-10 */
+}
+
+.badge {
+  display: inline-block;
+  /* inline-block */
+  font-size: 0.75rem;
+  /* text-xs */
+  font-weight: 700;
+  /* font-bold */
+  text-transform: uppercase;
+  /* uppercase */
+  letter-spacing: 0.1em;
+  /* tracking-widest */
+  color: #d4ff00;
+  /* text-[#d4ff00] */
+  border: 1px solid rgba(212, 255, 0, 0.2);
+  /* border border-[#d4ff00]/20 */
+  background-color: rgba(212, 255, 0, 0.05);
+  /* bg-[#d4ff00]/5 */
+  padding: 0.25rem 0.75rem;
+  /* px-3 py-1 */
+  border-radius: 9999px;
+  /* rounded-full */
+  margin-bottom: 1.5rem;
+  /* mb-6 (24px) */
+}
+
+.title {
+  font-size: 2.25rem;
+  /* text-4xl */
+  font-weight: 900;
+  /* font-black */
+  color: #ffffff;
+  /* text-white */
+  letter-spacing: -0.025em;
+  /* tracking-tight */
+  line-height: 1.25;
+  /* leading-tight */
+  margin-bottom: 1.5rem;
+  /* mb-6 (24px) */
+}
+
+/* Efeito de degradê no texto do span */
+.gradientText {
+  background: linear-gradient(to right, #c084fc, #ddd6fe, #d4ff00);
+  /* from-purple-400 via-violet-200 to-[#d4ff00] */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  /* text-transparent bg-clip-text */
+}
+
+.description {
+  font-size: 1rem;
+  /* text-base */
+  color: #a1a1aa;
+  /* text-zinc-400 */
+  font-weight: 400;
+  /* font-normal */
+  max-width: 42rem;
+  /* max-w-2xl */
+  margin-left: auto;
+  /* mx-auto */
+  margin-right: auto;
+  margin-bottom: 2.5rem;
+  /* mb-10 (40px) */
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  /* flex-col */
+  align-items: center;
+  /* items-center */
+  justify-content: center;
+  /* justify-center */
+  gap: 1rem;
+  /* gap-4 (16px) */
+}
+
+/* Base de estilo comum para ambos os botões */
+.btn {
+  width: 100%;
+  /* w-full */
+  font-weight: 500;
+  padding: 0.875rem 2rem;
+  /* px-8 py-3.5 */
+  border-radius: 0.75rem;
+  /* rounded-xl */
+  text-align: center;
+  /* text-center */
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  /* transition-all */
+}
+
+/* Botão "Ver Produtos" */
+.btnSecondary {
+  background-color: #18181b;
+  /* bg-zinc-900 */
+  border: 1px solid #27272a;
+  /* border border-zinc-800 */
+  color: #ffffff;
+  /* text-white */
+}
+
+.btnSecondary:hover {
+  background-color: #27272a;
+  /* hover:bg-zinc-800 */
+}
+
+/* Botão "Falar no WhatsApp" (Amarelo Neon) */
+.btnPrimary {
+  background-color: #d4ff00;
+  /* bg-[#d4ff00] */
+  color: #000000;
+  /* text-black */
+  font-weight: 700;
+  /* font-bold */
+  box-shadow: 0 4px 20px rgba(212, 255, 0, 0.15);
+  /* shadow-[0_4px_20px...] */
+}
+
+.btnPrimary:hover {
+  transform: scale(1.02);
+  /* hover:scale-[1.02] */
+}
+
+/* Media Queries para Responsividade (Telas maiores) */
+@media (min-width: 640px) {
+  .buttonGroup {
+    flex-direction: row;
+    /* sm:flex-row */
+  }
+
+  .btn {
+    width: auto;
+    /* sm:w-auto */
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.75rem;
+    /* md:text-6xl */
+  }
+
+  .description {
+    font-size: 1.25rem;
+    /* md:text-xl */
+  }
+}

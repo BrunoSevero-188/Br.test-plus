@@ -1,0 +1,109 @@
+.footer {
+  border-top: 1px solid #18181b;
+  /* border-t border-zinc-900 */
+  padding-top: 3rem;
+  /* py-12 (48px) */
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  /* px-4 (16px) */
+  padding-right: 1rem;
+  background-color: #050507;
+  /* bg-[#050507] */
+}
+
+/* O container adicionado para centralizar e gerenciar o alinhamento responsivo */
+.container {
+  max-width: 80rem;
+  /* max-w-7xl (1120px) */
+  margin-left: auto;
+  /* mx-auto */
+  margin-right: auto;
+  display: flex;
+  /* flex */
+  flex-direction: column;
+  /* flex-col */
+  align-items: center;
+  /* items-center */
+  justify-content: space-between;
+  /* justify-between */
+  gap: 1.5rem;
+  /* gap-6 (24px) */
+  text-align: center;
+  /* text-center */
+}
+
+.brand {
+  font-size: 1.125rem;
+  /* text-lg */
+  font-weight: 900;
+  /* font-black */
+  letter-spacing: 0.05em;
+  /* tracking-wider */
+  color: #ffffff;
+  /* text-white */
+}
+
+.brandHighlight {
+  color: #d4ff00;
+  /* text-[#d4ff00] */
+}
+
+.copyright {
+  font-size: 0.75rem;
+  /* text-xs */
+  color: #71717a;
+  /* text-zinc-500 */
+  margin-top: 0.25rem;
+  /* mt-1 (4px) */
+}
+
+.linksSection {
+  display: flex;
+  /* flex */
+  flex-direction: column;
+  /* flex-col */
+  gap: 1rem;
+  /* gap-4 (16px) */
+  font-size: 0.75rem;
+  /* text-xs */
+  color: #a1a1aa;
+  /* text-zinc-400 */
+}
+
+.label {
+  color: #52525b;
+  /* text-zinc-600 */
+  display: block;
+  /* block */
+  margin-bottom: 0.25rem;
+  /* mb-1 (4px) */
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  /* transition-colors */
+}
+
+.link:hover {
+  color: #ffffff;
+  /* hover:text-white */
+}
+
+/* Media Query para telas maiores (Desktop) */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    /* md:flex-row */
+    text-align: left;
+    /* md:text-left */
+  }
+
+  .linksSection {
+    flex-direction: row;
+    /* md:flex-row */
+    gap: 2rem;
+    /* md:gap-8 (32px) */
+  }
+}
