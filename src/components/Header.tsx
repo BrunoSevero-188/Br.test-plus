@@ -5,14 +5,15 @@ import styles from "@/CSS/Header.module.css";
 interface NavItem {
   label: string;
   href: string;
+  imageUrl?: string;
 }
 
 interface HeaderProps {
-  logoLeft?: string;        
-  logoHighlight?: string;   
-  navItems?: NavItem[];     
-  whatsappUrl?: string;     
-  whatsappLabel?: string;   
+  logoLeft?: string;
+  logoHighlight?: string;
+  navItems?: NavItem[];
+  whatsappUrl?: string;
+  whatsappLabel?: string;
 }
 
 export default function Header({

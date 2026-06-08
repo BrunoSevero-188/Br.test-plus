@@ -1,76 +1,73 @@
 .ctaSection {
-  padding-top: 4rem;      /* py-16 (64px) */
+  padding-top: 4rem;
   padding-bottom: 4rem;
-  padding-left: 1rem;     /* px-4 (16px) */
+  padding-left: 1rem;
   padding-right: 1rem;
-  background: linear-gradient(to bottom, rgba(59, 7, 105, 0.2), transparent); /* bg-gradient-to-b from-purple-950/20 to-transparent */
-  border-top: 1px solid #18181b; /* border-t border-zinc-900 */
+  background: linear-gradient(to bottom, rgba(59, 7, 105, 0.2), transparent);
+  border-top: 1px solid #18181b;
 }
 
-/* O container adicionado para alinhar e limitar o conteúdo central */
 .container {
-  max-width: 56rem;       /* max-w-4xl (896px) */
-  margin-left: auto;      /* mx-auto */
+  max-width: 56rem;
+  margin-left: auto;
   margin-right: auto;
-  text-align: center;     /* text-center */
+  text-align: center;
 }
 
 .title {
-  font-size: 1.5rem;      /* text-2xl */
-  font-weight: 900;       /* font-black */
-  color: #ffffff;         /* text-white */
-  margin-bottom: 1rem;    /* mb-4 (16px) */
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 1rem;
 }
 
 .description {
-  color: #a1a1aa;         /* text-zinc-400 */
-  font-size: 0.875rem;    /* text-sm */
-  margin-bottom: 2rem;    /* mb-8 (32px) */
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
 }
 
-.buttonGroup {
-  display: flex;          /* flex */
-  flex-wrap: wrap;        /* flex-wrap */
-  justify-content: center;/* justify-center */
-  gap: 1rem;              /* gap-4 (16px) */
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
-/* Base comum para ambos os botões */
-.btn {
-  font-weight: 700;       /* font-bold */
-  padding-left: 1.5rem;   /* px-6 (24px) */
+.whatsappButton, .instagramButton {
+  font-weight: 700;
+  padding-left: 1.5rem;
   padding-right: 1.5rem;
-  padding-top: 0.75rem;   /* py-3 (12px) */
+  padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  border-radius: 0.75rem; /* rounded-xl (12px) */
-  font-size: 0.875rem;    /* text-sm */
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
   text-decoration: none;
-  transition: transform 0.2s ease-in-out; /* transition-transform */
+  transition: transform 0.2s ease-in-out, background-color 0.2s;
 }
 
-.btn:hover {
-  transform: scale(1.05); /* hover:scale-105 */
+.whatsappButton:hover, .instagramButton:hover {
+  transform: scale(1.05);
 }
 
-/* Estilo específico do botão do WhatsApp (Amarelo Neon) */
-.btnWhatsApp {
-  background-color: #d4ff00; /* bg-[#d4ff00] */
-  color: #000000;            /* text-black */
+.whatsappButton {
+  background-color: #d4ff00;
+  color: #000000;
+}
+.whatsappButton:hover {
+  background-color: #bdff00;
 }
 
-/* Estilo específico do botão do Instagram */
-.btnInstagram {
-  background-color: #18181b; /* bg-zinc-900 */
-  border: 1px solid #27272a; /* border border-zinc-800 */
-  color: #ffffff;            /* text-white */
+.instagramButton {
+  background-color: #18181b;
+  border: 1px solid #27272a;
+  color: #ffffff;
+}
+.instagramButton:hover {
+  background-color: #27272a;
 }
 
-/* Media Query para responsividade dos textos */
 @media (min-width: 768px) {
-  .title {
-    font-size: 2.25rem;   /* md:text-4xl */
-  }
-  .description {
-    font-size: 1rem;      /* md:text-base */
-  }
+  .title { font-size: 2.25rem; }
+  .description { font-size: 1rem; }
 }

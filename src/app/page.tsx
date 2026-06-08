@@ -19,6 +19,7 @@ export default function Home() {
           { label: "História", href: "#sobre" }
         ]}
       />
+
       <main>
         <Hero
           tagLabel="Promoção Especial de Inauguração"
@@ -26,17 +27,23 @@ export default function Home() {
           titleGradient="acessórios premium"
           productButtonLabel="Ir para Vitrine"
         />
+
         <Services title="Soluções para seu Smartphone" />
+
         <FeaturedProducts
           title="Ofertas da Semana"
           subtitle="Confira os acessórios que acabaram de chegar na nossa vitrine"
         />
+
         <About
           title="Sobre a Empresa"
           highlightText="BR Test+"
+          imageUrl="/LogoBrTest.jpeg"
           description="A BR Test+ é referência em soluções inteligentes para o seu smartphone. Atuamos com a venda de acessórios premium homologados, suporte especializado e rotinas técnicas minuciosas para garantir o melhor desempenho e segurança dos seus dados. Nosso compromisso é entregar confiança, transparência e agilidade em cada atendimento."
         />
+
         <Reviews title="Depoimentos de Quem Confia na BR Test+" />
+
         <CTA
           title="Gostou de algum produto ou quer tirar uma dúvida?"
           description="Nossa equipe está pronta para te atender agora mesmo. Escolha sua rede favorita!"
@@ -44,6 +51,7 @@ export default function Home() {
           instagramLabel="Ver Novidades no Insta"
         />
       </main>
+
       <Footer
         whatsappDisplay="(67) 9894-2177"
         instagramDisplay="@br_test_navirai"

@@ -74,6 +74,26 @@
   background-color: #bdff00;
 }
 
+.logo {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -0.025em;
+  text-decoration: none;
+  display: inline-flex;
+    align-items: center;
+  gap: 0.25rem;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.logo:hover {
+  opacity: 0.9;
+}
+
+.highlight {
+  color: #d4ff00;
+}
+
 @media (min-width: 768px) {
   .navigation {
     display: flex;
