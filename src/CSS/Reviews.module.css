@@ -113,7 +113,26 @@
   background: rgba(0, 0, 0, 0.2);
   color: #ffffff;
   outline: none;
+  min-height: 7.5rem;
 }
+
+@media (min-width: 768px) {
+  .section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .formWrapper {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .textarea {
+    min-height: 6.5rem;
+  }
+}
+
 
 .textarea:focus {
   border-color: rgba(212, 255, 0, 0.8);
@@ -131,6 +150,12 @@
   font-weight: 700;
   cursor: pointer;
   transition: transform 0.05s ease-in-out, opacity 0.15s ease-in-out;
+}
+
+.sendButton:hover:not(:disabled) {
+  background-color: #c4e500;
+  transform: translateY(-2px);
+  transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out;
 }
 
 .sendButton:disabled {

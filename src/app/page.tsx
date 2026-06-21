@@ -13,7 +13,7 @@ export default function Home() {
       <Header
         whatsappLabel="Fale Conosco"
         navItems={[
-          { label: "Início", href: "#" },
+           { label: "Início", href: "#" },
           { label: "O que Fazemos", href: "#servicos" },
           { label: "Nossa Vitrine", href: "#produtos" },
           { label: "História", href: "#sobre" }
